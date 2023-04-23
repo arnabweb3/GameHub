@@ -7,7 +7,7 @@ const usePlatforms = () => {
     queryKey: ["platforms"],
     queryFn: platformService.getAll,
     staleTime: 24 * 60 * 60 * 1000, //24hr
-    initialData: { count: platforms.length, results: platforms },
+    initialData: platforms,
   });
 };
 
